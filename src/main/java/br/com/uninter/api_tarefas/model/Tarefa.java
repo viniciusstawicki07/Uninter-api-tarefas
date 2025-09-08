@@ -9,6 +9,17 @@ import java.time.LocalDate;
 @Entity
 public class Tarefa {
 
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nome;
+    private LocalDate dataEntrega;
+    private String responsavel;
+
+    
+    // Getters and Setters gerados automaticamente pelo Eclipse.
     public Long getId() {
 		return id;
 	}
@@ -33,13 +44,4 @@ public class Tarefa {
 	public void setResponsavel(String responsavel) {
 		this.responsavel = responsavel;
 	}
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String nome;
-    private LocalDate dataEntrega;
-    private String responsavel;
-
-    // Getters e Setters
 }

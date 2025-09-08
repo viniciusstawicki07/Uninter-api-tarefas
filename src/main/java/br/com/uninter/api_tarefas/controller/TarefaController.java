@@ -20,7 +20,7 @@ public class TarefaController {
         return tarefaRepository.save(tarefa);
     }
 
-    // Endpoint para listar todas as tarefas
+    // Endpoint para mostrar todas as tarefas
     @GetMapping
     public List<Tarefa> listarTarefas() {
         return tarefaRepository.findAll();
